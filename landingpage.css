@@ -656,6 +656,8 @@ html {
 .nikelogoo img {
   width: 100px;
   padding-bottom: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
 .find ul {
@@ -673,7 +675,6 @@ html {
   list-style: none;
   color: #000;
 }
-
 @media(max-width:411px) {
   .find li a {
     font-size: 12px;
