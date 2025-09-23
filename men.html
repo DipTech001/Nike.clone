@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Women</title>
+    <title>Men</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=language" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./women.css">
+    <link rel="stylesheet" href="./men.css">
 </head>
 
 <body>
@@ -43,7 +43,6 @@
                     <li><a class="dropdown-item" href="#">Send Us Feedback</a></li>
                 </ul>
             </div>
-
 
             <a href="#">Join Us</a>
             <a href="#">Sign In</a>
@@ -116,10 +115,8 @@
 
                         <!-- Men -->
                         <li class="nav-item dropdown mega-dropdown">
-                            <a class="nav-link dropdown-toggle" href="men.html" id="womenDropdown"
-                                onclick="window.location='men.html'">
-                                Men
-                            </a>
+                            <a class="nav-link dropdown-toggle" href="#" id="menDropdown" data-bs-toggle="dropdown"
+                                aria-expanded="false">Men</a>
                             <div class="dropdown-menu mega-menu p-4" aria-labelledby="menDropdown">
                                 <div class="row gx-4">
                                     <div class="col-md-3">
@@ -556,268 +553,183 @@
         <div class="women1">
             <div class="women01">
                 <h2>
-                    Women
+                    Men
                 </h2>
             </div>
             <ul class="fw-bold">
                 <li><a href="#">Shoes</a></li>
                 <li><a href="#">Clothing</a></li>
-                <li><a href="#">Bras & Leggings</a></li>
-                <li><a href="#">Find Your Sports Bra</a></li>
+                <li><a href="#">Accessories</a></li>
             </ul>
         </div>
     </section>
-    <div id="carouselExampleDark" class="carousel carousel-dark slide position-relative" data-bs-ride="carousel"
-        data-bs-pause="false">
-
-        <!-- Indicators -->
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
+    <section class="just1">
+        <div class="just1">
+            <img src="./just.jpg" alt="just1" width="100%">
+            <div class="button">
+                <button class="btn">Shop Lebron James</button>
+            </div>
         </div>
+    </section>
+    <section class="just2">
+        <div class="just2">
+            <img src="./jtt.jpg" alt="just1" width="100%">
+            <div class="button">
+                <button class="btn00">Shop Lebron James</button>
+            </div>
+        </div>
+    </section>
+    <section class="shop-by-sport">
+        <h2>Shop by Sport</h2>
 
-        <!-- Slides -->
-        <div class="carousel-inner">
-            <!-- Slide 1 -->
-            <div class="carousel-item active first-slide-move" data-bs-interval="10000">
-                <img id="slide1-img" src="./imgi_1_women-s-shoes-clothing-accessories.jpg" class="d-block w-100"
-                    alt="Slide 1">
-                <div class="carousel-caption d-flex flex-column justify-content-end align-items-center h-100 pb-5">
-                    <button class="btn btn-light btn-lg mt-3 fw-bold rounded">Shop Caitlin Clark</button>
+        <div class="slider-wrapper">
+            <!-- Left button -->
+            <button class="slider-btn left" onclick="scrollSlider(-1)">&#8249;</button>
+
+            <!-- Slider track -->
+            <div class="slider-track" id="sportSlider">
+                <div class="sport-card">
+                    <img src="./hold.jpg" alt="Running" loading="lazy">
+                    <button class="shop-btn">Shop Running</button>
+                </div>
+                <div class="sport-card">
+                    <img src="./5n.jpg" alt="Football" loading="lazy">
+                    <button class="shop-btn">Shop Football</button>
+                </div>
+                <div class="sport-card">
+                    <img src="./hold3.jpg" alt="Soccer" loading="lazy">
+                    <button class="shop-btn">Shop Soccer</button>
+                </div>
+                <div class="sport-card">
+                    <img src="./hold1.jpg" alt="Training" loading="lazy">
+                    <button class="shop-btn">Shop Training</button>
+                </div>
+                <div class="sport-card">
+                    <img src="./hold6.jpg" alt="Basketball" loading="lazy">
+                    <button class="shop-btn">Shop Basketball</button>
                 </div>
             </div>
 
-            <!-- Slide 2 -->
-            <div class="carousel-item" data-bs-interval="10000">
-                <img id="slide2-img" src="./imgi_2_women-s-shoes-clothing-accessories.jpg" class="d-block w-100"
-                    alt="Slide 2">
-                <div class="carousel-caption d-flex flex-column justify-content-end align-items-center h-100 pb-5">
-                    <h1 class="text-white text-uppercase text-center custom-hero-text custom-bold">
-                        SABRINA 3 'RADIANT'
-                    </h1>
-                    <button class="btn btn-light btn-lg mt-3 fw-bold rounded">Shop</button>
-                </div>
-            </div>
+            <!-- Right button -->
+            <button class="slider-btn right" onclick="scrollSlider(1)">&#8250;</button>
         </div>
-
-        <!-- Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+    </section>
     <script>
-        function updateSlideImages() {
-            const slideImages = [
-                {
-                    id: 'slide1-img',
-                    desktop: './imgi_1_women-s-shoes-clothing-accessories.jpg',
-                    mobile: './worm.jpg'
-                },
-                {
-                    id: 'slide2-img',
-                    desktop: './imgi_2_women-s-shoes-clothing-accessories.jpg',
-                    mobile: './worm2.jpg'
-                }
-            ];
+        const slider = document.getElementById("sportSlider");
+        let scrollAmount = 0;
 
-            const isMobile = window.innerWidth <= 920;
+        function scrollSlider(direction) {
+            const cardWidth = slider.querySelector(".sport-card").offsetWidth + 20; // card + gap
+            scrollAmount += direction * cardWidth;
 
-            slideImages.forEach(slide => {
-                const img = document.getElementById(slide.id);
-                if (!img) return;
+            // Limit scroll
+            const maxScroll = slider.scrollWidth - slider.parentElement.offsetWidth;
+            if (scrollAmount < 0) scrollAmount = 0;
+            if (scrollAmount > maxScroll) scrollAmount = maxScroll;
 
-                const newSrc = isMobile ? slide.mobile : slide.desktop;
-                img.src = newSrc;
-
-                img.onerror = () => {
-                    console.warn(`Failed to load ${img.src}, falling back to desktop image.`);
-                    img.onerror = null;
-                    img.src = slide.desktop;
-                };
-            });
+            slider.style.transform = `translateX(${-scrollAmount}px)`;
         }
-
-        window.addEventListener('load', updateSlideImages);
-        window.addEventListener('resize', updateSlideImages);
     </script>
-    <section class="prod-section">
-        <!-- Card 1 -->
-        <div class="prod-card">
-            <img src="./img05.jpg" alt="Sabrina 3 Radiant">
-            <div class="prod-card-content">
-                <p>Leaders of the Pack</p>
-                <h2>Air Max Muse & Air Super</h2>
-                <button class="prod-btn">Shop</button>
-            </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="prod-card">
-            <img src="./img06.jpg" alt="Nike Style by Sauce Gardner">
-            <div class="prod-card-content">
-                <p>Freedom and Stability, All in one</p>
-                <h2>Free Metcon 6</h2>
-                <button class="prod-btn">Shop</button>
-            </div>
-        </div>
-    </section>
 
 
-    <section class="african-section">
-        <h2 class="section-title">Shop The Look</h2>
-        <div class="african-card">
-            <!-- CARD 1 -->
-            <div class="african-card-item">
-                <img src="./lll.jpg" alt="Chloe Kim">
-                <div class="overlay">
-                    <p class="name">Chloe Kim</p>
-                    <button class="shop-look-btn">
-                        <i class="fas fa-eye"></i> Shop the Look
-                    </button>
+    <section class="Trending">
+        <div class="cont">
+            <h1>Trending Now</h1>
+            <div class="trend">
+                <div class="Trending102">
+                    <div class="Trending10">
+                        <img src="./imgi_13_men-s-shoes-clothing-accessories.jpg" alt="Nike Tennis" class="desktop-img">
+                        <img src="./29.jpg" alt="Nike Tennis" class="mobile-img">
+                        <div class="tree">
+                            <h2>Nike Tennis</h2>
+                            <h3>Built to Perform</h3>
+                            <button class="shop-btn21">Shop</button>
+                        </div>
+                    </div>
+
+                    <div class="Trending10">
+                        <img src="./imgi_14_men-s-shoes-clothing-accessories.jpg" alt="Sabrina 3" class="desktop-img">
+                        <img src="./menn1.jpg" alt="Sabrina 3" class="mobile-img">
+                        <div class="tree">
+                            <h2>Sabrina 3 'Silencer'</h2>
+                            <h3>Quiet the Noise</h3>
+                            <button class="shop-btn21">Shop</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <!-- CARD 2 -->
-            <div class="african-card-item">
-                <img src="./img08.jpg" alt="Jordan Chiles">
-                <div class="overlay">
-                    <p class="name">Jordan Chiles</p>
-                    <button class="shop-look-btn">
-                        <i class="fas fa-eye"></i> Shop the Look
-                    </button>
-                </div>
-            </div>
+                <div class="Trending102">
+                    <div class="Trending10">
+                        <img src="./imgi_15_men-s-shoes-clothing-accessories.jpg" alt="Nike Golf" class="desktop-img">
+                        <img src="./men01.jpg" alt="Nike Golf" class="mobile-img">
+                        <div class="tree">
+                            <h2>Nike Golf</h2>
+                            <h3>Tee-Time Essentials</h3>
+                            <button class="shop-btn21">Shop</button>
+                        </div>
+                    </div>
 
-            <!-- CARD 3 -->
-            <div class="african-card-item">
-                <img src="./img09.jpg" alt="Rhasidat Adeleke">
-                <div class="overlay">
-                    <p class="name">Rhasidat Adeleke</p>
-                    <button class="shop-look-btn">
-                        <i class="fas fa-eye"></i> Shop the Look
-                    </button>
+                    <div class="Trending10">
+                        <img src="./imgi_16_men-s-shoes-clothing-accessories.jpg" alt="Ronald Acufia Jr's Top Picks"
+                            class="desktop-img">
+                        <img src="./men112.jpg" alt="Ronald Acufia Jr's Top Picks" class="mobile-img">
+                        <div class="tree">
+                            <h2>Ronald Acufia Jr's Top Picks</h2>
+                            <h3>Look and Feel Like a Pro</h3>
+                            <button class="shop-btn21">Shop</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <div class="container my-5 position-relative">
-        <h3 class="mb-4 fw-bold">Shop By Collection</h3>
-
-        <!-- Slider buttons -->
-        <button class="slider-btn left" onclick="scrollSlider(-1)">&#8249;</button>
-        <button class="slider-btn right" onclick="scrollSlider(1)">&#8250;</button>
-
-        <!-- Product slider -->
-        <div id="productSlider" class="product-slider">
-            <div class="product-card">
-                <img src="./img010.jpg" alt="Nike 24.7" loading="lazy">
-                <div class="tagline">Tailored For All-Day Comfort</div>
-                <h2 class="collection-title">Nike 24.7</h2>
-            </div>
-            <div class="product-card">
-                <img src="./011.jpg" alt="Nike Form" loading="lazy">
-                <div class="tagline">Your One And Only Layer</div>
-                <h2 class="collection-title">Nike Form</h2>
-            </div>
-            <div class="product-card">
-                <img src="./012.jpg" alt="Nike Pro" loading="lazy">
-                <div class="tagline">Strength Training Essentials</div>
-                <h2 class="collection-title">Nike Pro</h2>
-            </div>
-            <div class="product-card">
-                <img src="./013.jpg" alt="Nike Zenvy" loading="lazy">
-                <div class="tagline">Softness That Lasts</div>
-                <h2 class="collection-title">Nike Zenvy</h2>
-            </div>
-            <div class="product-card">
-                <img src="./014.jpg" alt="Nike Swift" loading="lazy">
-                <div class="tagline">Run Ready</div>
-                <h2 class="collection-title">Nike Swift</h2>
-            </div>
-            <div class="product-card">
-                <img src="./015.jpg" alt="Sabrina Ionescu" loading="lazy">
-                <div class="tagline">The Blueprint to Success</div>
-                <h2 class="collection-title">Sabrina Ionescu</h2>
-            </div>
-        </div>
-    </div>
-
-
-    <section class="product-section01">
-        <h2 class="h22"> The Latest Styles</h2>
-        <div class="div-product-card">
-            <div class="card01">
-                <!-- <img src="./016.jpg" alt="016image"> -->
-                <div class="card-content01">
-                    <p>Fall Capsule</p>
-                    <h2>Nike Shox TL</h2>
-                    <button class="prod-btn">Shop</button>
-                </div>
-            </div>
-            <div class="card02">
-                <div class="card-content02">
-                    <p>Nike Ruining</p>
-                    <h2>Vomero Plus</h2>
-                    <button class="prod-btn">Shop</button>
-                </div>
+    <section class="just4">
+        <div class="banner">
+            <img src="./imgi_8_men-s-shoes-clothing-accessories (1).jpg" alt="just1">
+            <div class="overlay">
+                <h1>SHOW THEM WHO YOU ARE</h1>
+                <h3>When your rival is at the door, who will you become? NFL Nike Rivalries are here.</h3>
+                <button class="btn1">Shop</button>
             </div>
         </div>
     </section>
-    <div class="container my-5 position-relative">
-        <h3 class="mb-4 fw-bold">Color Shop</h3>
 
-        <!-- Slider buttons -->
-        <button class="slider-btn left" onclick="scrollSlider(-1)">&#8249;</button>
-        <button class="slider-btn right" onclick="scrollSlider(1)">&#8250;</button>
-
-        <!-- Product slider -->
-        <div id="productSlider" class="product-slider">
-            <div class="product-card">
-                <img src="./021.jpg" alt="Nike 24.7" loading="lazy">
-                <div class="tagline">Pink Pops</div>
-                <!-- <h2 class="collection-title">Nike 24.7</h2> -->
-            </div>
-            <div class="product-card">
-                <img src="./022.jpg" alt="Nike Form" loading="lazy">
-                <div class="tagline">Teal Tones</div>
-                <!-- <h2 class="collection-title">Nike Form</h2> -->
-            </div>
-            <div class="product-card">
-                <img src="./023.jpg" alt="Nike Pro" loading="lazy">
-                <div class="tagline">Picante Red</div>
-                <!-- <h2 class="collection-title">Nike Pro</h2> -->
-            </div>
-            <div class="product-card">
-                <img src="./024.jpg" alt="Nike Zenvy" loading="lazy">
-                <div class="tagline">Timeless Neutrals</div>
-                <!-- <h2 class="collection-title">Nike Zenvy</h2> -->
-            </div>
-            <div class="product-card">
-                <img src="./025.jpg" alt="Nike Swift" loading="lazy">
-                <div class="tagline">Midnight Navy</div>
-                <!-- <h2 class="collection-title">Nike Swift</h2> -->
-            </div>
-            <div class="product-card">
-                <img src="./026.jpg" alt="Sabrina Ionescu" loading="lazy">
-                <div class="tagline">Burgundy Crush</div>
-                <!-- <h2 class="collection-title">Sabrina Ionescu</h2> -->
+    <section class="just5">
+        <div class="banner">
+            <img src="./imgi_12_men-s-shoes-clothing-accessories.jpg" alt="just1">
+            <div class="overlay">
+                <h1>SHOW THEM WHO YOU ARE</h1>
+                <h3>When your rival is at the door, who will you become? NFL Nike Rivalries are here.</h3>
+                <button class="btn1">Shop</button>
             </div>
         </div>
-    </div>
+    </section>
+    <section class="category">
+        <div class="ca">
+            <h2>Shop By Category</h2>
+            <div class="cat1">
+                <div class="cad">
+                    <img src="./cad10.jpg" alt="Accessories">
+                    <h3>Accessories</h3>
+                </div>
+                <div class="cad">
+                    <img src="./cad2.jpg" alt="Accessories">
+                    <h3>Shoes</h3>
+                </div>
+                <div class="cad">
+                    <img src="./cad3.jpg" alt="Accessories">
+                    <h3>Clothing</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
     <div class="container my-5 position-relative">
         <h3 class="mb-4 fw-bold">Shop The Classics</h3>
 
         <!-- Left / Right buttons -->
-        <button class="slider-btn left" onclick="scrollSlider(-1)">&#8249;</button>
-        <button class="slider-btn right" onclick="scrollSlider(1)">&#8250;</button>
+        <button class="slider-btn left" onclick="scrollSliderClassic(-1)">&#8249;</button>
+        <button class="slider-btn right" onclick="scrollSliderClassic(1)">&#8250;</button>
 
         <!-- Product slider -->
         <div id="productSlider" class="product-slider">
@@ -854,16 +766,17 @@
                 <div class="mt-2">C1TY</div>
             </div>
         </div>
+    </div>
 
-        <script>
-            function scrollSlider(direction) {
-                const slider = document.getElementById("productSlider");
-                let cardWidth = document.querySelector(".product-card").offsetWidth + 20; // card + gap
-                slider.scrollBy({ left: direction * cardWidth, behavior: "smooth" });
-            }
-        </script>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function scrollSliderClassic(direction) {
+            const slider = document.getElementById("productSlider");
+            let cardWidth = document.querySelector(".product-card").offsetWidth + 20; // card + gap
+            slider.scrollBy({ left: direction * cardWidth, behavior: "smooth" });
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <footer>
         <!-- FOOTER LINKS SECTION -->
         <div class="container-two">
             <!-- Resources -->
@@ -959,6 +872,8 @@
             </div>
         </div>
 
+    </footer>
 </body>
+
 
 </html>

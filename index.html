@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Nike - Header (replica)</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=language" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="landingpage.css">
@@ -26,7 +27,7 @@
 
             <!-- Help Dropdown -->
             <div class="dropdown">
-                <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link" href="helppage.html" id="helpLink">
                     Help
                 </a>
                 <ul class="dropdown-menu">
@@ -42,6 +43,7 @@
                     <li><a class="dropdown-item" href="#">Send Us Feedback</a></li>
                 </ul>
             </div>
+
 
             <a href="#">Join Us</a>
             <a href="#">Sign In</a>
@@ -90,7 +92,7 @@
                                     <div class="col-md-3">
                                         <h6 class="mega-title">Shop New</h6>
                                         <ul class="list-unstyled">
-                                            <li><a href="#">Men</a></li>
+                                            <li><a href="men.html">Men</a></li>
                                             <li><a href="women.html">Women</a></li>
                                             <li><a href="kid.html">Kids</a></li>
                                             <li><a href="#">Shop All</a></li>
@@ -114,8 +116,10 @@
 
                         <!-- Men -->
                         <li class="nav-item dropdown mega-dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="menDropdown" data-bs-toggle="dropdown"
-                                aria-expanded="false">Men</a>
+                            <a class="nav-link dropdown-toggle" href="men.html" id="womenDropdown"
+                                onclick="window.location='men.html'">
+                                Men
+                            </a>
                             <div class="dropdown-menu mega-menu p-4" aria-labelledby="menDropdown">
                                 <div class="row gx-4">
                                     <div class="col-md-3">
@@ -525,6 +529,27 @@
 
             </div>
         </nav>
+        <div id="promoCarousel" class="carousel slide promo-bar" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-inner">
+                <div class="carousel-item active fw-bold">
+                    <p class="fw-bold">Get a Nike Gift Card</p>
+                </div>
+                <div class="carousel-item">
+                    <p class="fw-bold">Members: Free Shipping on Orders $50+</p>
+                </div>
+                <div class="carousel-item">
+                    <p class="fw-bold">Look for Store Pickup at Checkout</p>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </header>
 
     <div id="carouselExampleDark" class="carousel carousel-dark slide position-relative" data-bs-ride="carousel"
@@ -753,10 +778,100 @@
             </div>
         </section>
 
+        <!-- FOOTER LINKS SECTION -->
+        <div class="container-two">
+            <!-- Resources -->
+            <div>
+                <ul>
+                    <li class="bold">Resources</li>
+                    <li><a href="#">Gift Cards</a></li>
+                    <li><a href="#">Find a Store</a></li>
+                    <li><a href="#">Membership</a></li>
+                    <li><a href="#">Nike Journal</a></li>
+                    <li><a href="#">Site Feedback</a></li>
+                </ul>
+            </div>
+
+            <!-- Help -->
+            <div>
+                <ul>
+                    <li class="bold">Help</li>
+                    <li><a href="#">Get Help</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Shipping & Delivery</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Order Cancellation</a></li>
+                    <li><a href="#">Payment Options</a></li>
+                    <li><a href="#">Gift Card Balance</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Company -->
+            <div>
+                <ul>
+                    <li class="bold">Company</li>
+                    <li><a href="#">About Nike</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Purpose</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                </ul>
+            </div>
+
+            <!-- Promotions & Discounts -->
+            <div>
+                <ul>
+                    <li class="bold">Promotions & Discounts</li>
+                    <li><a href="#">Student</a></li>
+                    <li><a href="#">Military</a></li>
+                    <li><a href="#">Teacher</a></li>
+                    <li><a href="#">First Responders & Medical Professionals</a></li>
+                    <li><a href="#">Birthday</a></li>
+                </ul>
+            </div>
+
+            <!-- Country -->
+            <div class="country">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="material-symbols-outlined">language</span> United States
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
 
-
-
+        <div class="footer-bottom">
+            <p>© 2025 Nike, Inc. All Rights Reserved</p>
+            <div class="footer-links">
+                <div class="dropup">
+                    <button class="nav-link" id="helpLink">
+                        Guides
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropup-item" href="#">Nike Air</a></li>
+                        <li><a class="dropup-item" href="#">Nike Air Force 1</a></li>
+                        <li><a class="dropup-item" href="#">Nike Air Max</a></li>
+                        <li><a class="dropup-item" href="#">Nike FlyEase</a></li>
+                        <li><a class="dropup-item" href="#">Nike Flyknit</a></li>
+                        <li><a class="dropup-item" href="#">Nike Free</a></li>
+                        <li><a class="dropup-item" href="#">Nike React</a></li>
+                        <li><a class="dropup-item" href="#">Nike Vaporfly</a></li>
+                        <li><a class="dropup-item" href="#">Nike ZoomX</a></li>
+                        <li><a class="dropup-item" href="#">Space Hippie</a></li>
+                    </ul>
+                </div>
+                <a href="#">Terms of Sale</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Nike Privacy Policy</a>
+                <a href="#">Your Privacy Choices</a>
+                <a href="#">CA Supply Chains Act</a>
+            </div>
+        </div>
 
 
 
@@ -764,7 +879,152 @@
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+        <!-- <footer>
+      <div class="footer-container-one">
+        <div class="section-one">
+          <div>
+            <ul>
+              <a href="#"><li class="bold">Featured</li></a>
+              <a href="#"><li>New Arrivals</li></a>
+              <a href="#"><li>Best Sellers</li></a>
+              <a href="#"><li>Latest Drops</li></a>
+              <a href="#"><li>Air Max</li></a>
+            </ul>
+          </div>
 
+          <div>
+            <ul>
+              <a href="#"><li class="bold">Shoes</li></a>
+              <a href="#"><li>All Shoes</li></a>
+              <a href="#"><li>Basketball</li></a>
+              <a href="#"><li>Lifestyle</li></a>
+              <a href="#"><li>Jordan</li></a>
+            </ul>
+          </div>
+
+          <div>
+            <ul>
+              <a href="#"><li class="bold">Clothing</li></a>
+              <a href="#"><li>All Clothing</li></a>
+              <a href="#"><li>Bras</li></a>
+              <a href="#"><li>Hoodies & Sweatshirts</li></a>
+              <a href="#"><li>Leggings</li></a>
+            </ul>
+          </div>
+
+          <div>
+            <ul>
+              <a href="#"><li class="bold">Accessories</li></a>
+              <a href="#"><li>Bags & Backpacks</li></a>
+              <a href="#"><li>Hats & Headwear</li></a>
+              <a href="#"><li>Socks</li></a>
+              <a href="#"><li>Sunglasses</li></a>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="section-two">
+            <div>
+                
+                <ul>
+                    
+                    <a href="#"><li>Nike Style By</li></a>
+                    <a href="#"><li>So Win Collection</li></a>
+                    <a href="#"><li>Spring Essentials</li></a>
+                    <a href="#"><li>Shop All Sales</li></a>
+                    
+                </ul>
+            </div>
+
+            <div>
+                
+                <ul>
+                    
+                    <a href="#"><li>Retro Running</li></a>
+                    <a href="#"><li>Runningl</li></a>
+                    <a href="#"><li>Sandals & Slides</li></a>
+                    <a href="#"><li>Training & Gym</li></a>
+                    <a href="#"><li>Shoes $100 & Under</li></a>
+                    
+                </ul>
+            </div>
+
+            <div>
+                
+                <ul>
+                    <a href="#"><li>Marching Sets</li></a>
+                    <a href="#"><li>24.7 Collection</li></a>
+                    <a href="#"><li>Jackets & Vests</li></a>
+                    <a href="#"><li>Pants</li></a>
+                    <a href="#"><li>Skirt & Dresses</li></a>
+                    <a href="#"><li>Shorts</li></a>
+                    <a href="#"><li>Top & T-Shirts</li></a>
+                </ul>
+            </div>
+
+            <div>
+                
+                <ul>
+                    <a href="#"><li>Belts</li></a>
+                    
+                    
+                </ul>
+            </div>
+        </div> 
+      </div>
+      <div class=" footer-container-two">
+        <div>
+          <ul>
+            <a href="#"><li class="bold">Resources</li></a>
+            <a href="#"><li>Gift Cards</li></a>
+            <a href="#"><li>Find a Store</li></a>
+            <a href="#"><li>Membership</li></a>
+            <a href="#"><li>Nike Journal</li></a>
+            <a href="#"><li>Site Feedback</li></a>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            <a href="#"><li class="bold">Help</li></a>
+            <a href="#"><li>Resources</li></a>
+            <a href="#"><li>Get Help</li></a>
+            <a href="#"><li>Order Status</li></a>
+            <a href="#"><li>Shipping & Delivery</li></a>
+            <a href="#"><li>Returns</li></a>
+            <a href="#"><li>Order Cancellation</li></a>
+            <a href="#"><li>Payment Options</li></a>
+            <a href="#"><li>Gift Card Balance</li></a>
+            <a href="#"><li>Contact us</li></a>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            <a href="#"><li class="bold">Company</li></a>
+            <a href="#"><li>About Nike</li></a>
+            <a href="#"><li>News</li></a>
+            <a href="#"><li>Career</li></a>
+            <a href="#"><li>Investors</li></a>
+            <a href="#"><li>Purpose</li></a>
+            <a href="#"><li>Sustainabilty</li></a>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            <a href="#"><li class="bold">Promotions & Discounts</li></a>
+            <a href="#"><li>Student</li></a>
+            <a href="#"><li>Military</li></a>
+            <a href="#"></a>
+            <a href="#"><li>First Responders & Medical Professionals</li></a>
+            <a href="#"><li>Birthday</li></a>
+          </ul>
+        </div>
+      </div>
+      <script src="index.js"></script>
+      </footer> -->
+</body>
 
 </html>
