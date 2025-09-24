@@ -1118,8 +1118,7 @@ a:hover {
   transform: translateY(10px);
   pointer-events: none;
   position: absolute;
-  bottom: 100%;
-  /* opens upward */
+  bottom: 100%; /* Always open upward */
   left: 0;
   background: #fff;
   border: 1px solid #ddd;
@@ -1183,124 +1182,6 @@ a:hover {
     align-items: flex-start;
     gap: 10px;
   }
-
-  /* Dropup opens downward on smaller screens */
-  .dropup .dropdown-menu {
-    bottom: auto;
-    top: 100%;
-  }
-}
-
-/* Small Mobile (≤ 480px) */
-@media (max-width: 480px) {
-  .footer-bottom {
-    align-items: center;
-    text-align: center;
-    gap: 12px;
-  }
-
-  .footer-links {
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .footer-links a,
-  .dropup .nav-link {
-    font-size: 12px;
-  }
-}
-
-/* Tablet (≤ 1024px) */
-@media (max-width: 1024px) {
-  .footer-bottom {
-    font-size: 13px;
-    gap: 20px;
-    padding: 15px;
-  }
-
-  .footer-links {
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-}
-
-/* Mobile (≤ 768px) */
-@media (max-width: 768px) {
-  .footer-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-    font-size: 13px;
-  }
-
-  .footer-links {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  /* Dropup opens downward on smaller screens */
-  .dropup .dropdown-menu {
-    bottom: auto;
-    top: 100%;
-  }
-}
-
-/* Small Mobile (≤ 480px) */
-@media (max-width: 480px) {
-  .footer-bottom {
-    align-items: center;
-    text-align: center;
-    gap: 12px;
-  }
-
-  .footer-links {
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .footer-links a,
-  .dropup .nav-link {
-    font-size: 12px;
-  }
-}
-
-/* Tablet (≤ 1024px) */
-@media (max-width: 1024px) {
-  .footer-bottom {
-    font-size: 13px;
-    gap: 20px;
-    padding: 15px;
-  }
-
-  .footer-links {
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-}
-
-/* Mobile (≤ 768px) */
-@media (max-width: 768px) {
-  .footer-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-    font-size: 13px;
-  }
-
-  .footer-links {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  /* Dropup opens downward on smaller screens */
-  .dropup .dropdown-menu {
-    bottom: auto;
-    top: 100%;
-  }
 }
 
 /* Small Mobile (≤ 480px) */
@@ -1343,8 +1224,7 @@ a:hover {
   .footer-links a,
   .dropup .nav-link {
     font-size: 12px;
-    white-space: normal;
-    /* allow wrapping */
+    white-space: normal; /* allow wrapping */
     text-align: center;
   }
 

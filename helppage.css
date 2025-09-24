@@ -662,256 +662,136 @@ a:hover {
 
 /* Dropup menu */
 .dropup {
-    position: relative;
+  position: relative;
 }
 
 .dropup .nav-link {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font: inherit;
-    padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
 }
 
 .dropup .dropdown-menu {
-    display: block;
-    opacity: 0;
-    transform: translateY(10px);
-    pointer-events: none;
-    position: absolute;
-    bottom: 100%;
-    /* opens upward */
-    left: 0;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 10px 0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    z-index: 10;
-    min-width: 180px;
-    transition: opacity 0.2s ease, transform 0.2s ease;
+  display: block;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  position: absolute;
+  bottom: 100%; /* Always open upward */
+  left: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  min-width: 180px;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .dropup:hover .dropdown-menu {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 .dropdown-menu li {
-    list-style: none;
+  list-style: none;
 }
 
 .dropdown-menu a {
-    display: block;
-    padding: 8px 15px;
-    font-size: 14px;
-    color: #333;
-    text-decoration: none;
+  display: block;
+  padding: 8px 15px;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
 }
 
 .dropdown-menu a:hover {
-    background: #f5f5f5;
-    color: black;
-    border-radius: 4px;
+  background: #f5f5f5;
+  color: black;
+  border-radius: 4px;
 }
 
 /* Tablet (≤ 1024px) */
 @media (max-width: 1024px) {
-    .footer-bottom {
-        font-size: 13px;
-        gap: 20px;
-        padding: 15px;
-    }
+  .footer-bottom {
+    font-size: 13px;
+    gap: 20px;
+    padding: 15px;
+  }
 
-    .footer-links {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
 }
 
 /* Mobile (≤ 768px) */
 @media (max-width: 768px) {
-    .footer-bottom {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-        font-size: 13px;
-    }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    font-size: 13px;
+  }
 
-    .footer-links {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    /* Dropup opens downward on smaller screens */
-    .dropup .dropdown-menu {
-        bottom: auto;
-        top: 100%;
-    }
+  .footer-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
 }
 
 /* Small Mobile (≤ 480px) */
 @media (max-width: 480px) {
-    .footer-bottom {
-        align-items: center;
-        text-align: center;
-        gap: 12px;
-    }
+  .footer-bottom {
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+  }
 
-    .footer-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-    }
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
 
-    .footer-links a,
-    .dropup .nav-link {
-        font-size: 12px;
-    }
-}
-
-/* Tablet (≤ 1024px) */
-@media (max-width: 1024px) {
-    .footer-bottom {
-        font-size: 13px;
-        gap: 20px;
-        padding: 15px;
-    }
-
-    .footer-links {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-}
-
-/* Mobile (≤ 768px) */
-@media (max-width: 768px) {
-    .footer-bottom {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-        font-size: 13px;
-    }
-
-    .footer-links {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    /* Dropup opens downward on smaller screens */
-    .dropup .dropdown-menu {
-        bottom: auto;
-        top: 100%;
-    }
-}
-
-/* Small Mobile (≤ 480px) */
-@media (max-width: 480px) {
-    .footer-bottom {
-        align-items: center;
-        text-align: center;
-        gap: 12px;
-    }
-
-    .footer-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .footer-links a,
-    .dropup .nav-link {
-        font-size: 12px;
-    }
-}
-
-/* Tablet (≤ 1024px) */
-@media (max-width: 1024px) {
-    .footer-bottom {
-        font-size: 13px;
-        gap: 20px;
-        padding: 15px;
-    }
-
-    .footer-links {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-}
-
-/* Mobile (≤ 768px) */
-@media (max-width: 768px) {
-    .footer-bottom {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-        font-size: 13px;
-    }
-
-    .footer-links {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    /* Dropup opens downward on smaller screens */
-    .dropup .dropdown-menu {
-        bottom: auto;
-        top: 100%;
-    }
-}
-
-/* Small Mobile (≤ 480px) */
-@media (max-width: 480px) {
-    .footer-bottom {
-        align-items: center;
-        text-align: center;
-        gap: 12px;
-    }
-
-    .footer-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .footer-links a,
-    .dropup .nav-link {
-        font-size: 12px;
-    }
+  .footer-links a,
+  .dropup .nav-link {
+    font-size: 12px;
+  }
 }
 
 /* Ultra small devices (≤ 360px) */
 @media (max-width: 360px) {
-    .footer-bottom {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 12px;
-        padding: 10px;
-    }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    padding: 10px;
+  }
 
-    .footer-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-        width: 100%;
-    }
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+  }
 
-    .footer-links a,
-    .dropup .nav-link {
-        font-size: 12px;
-        white-space: normal;
-        /* allow wrapping */
-        text-align: center;
-    }
+  .footer-links a,
+  .dropup .nav-link {
+    font-size: 12px;
+    white-space: normal; /* allow wrapping */
+    text-align: center;
+  }
 
-    .dropup .dropdown-menu {
-        left: 50%;
-        transform: translateX(-50%);
-        min-width: 160px;
-    }
+  .dropup .dropdown-menu {
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 160px;
+  }
 }
